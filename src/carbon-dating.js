@@ -19,7 +19,7 @@ const HALF_LIFE_PERIOD = 5730;
  * dateSample('WOOT!') => false
  *
  */
-function dateSample( /* sampleActivity */ ) {
+function dateSample(sampleActivity) {
   if (Number(sampleActivity) >= MODERN_ACTIVITY || Number(sampleActivity) < 0) return false;
   if (typeof sampleActivity !== 'string' || sampleActivity === null && Number.isNaN(sampleActivity)) return false;
   if (!parseInt(sampleActivity)) return false;
